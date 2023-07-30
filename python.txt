@@ -1,0 +1,4 @@
+C:\Users\森島章仁\AppData\Local\Programs\Python\Python37\python.exe
+
+protobufのバージョンを下げる
+pip install protobuf==3.20.1
