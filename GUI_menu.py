@@ -92,7 +92,7 @@ def data_augumentation(folder, size):
                     roi = img_origin[y:y+size, x:x+size]
                     filename = f"{basename}_({i}_{j}){ext}"
                     cv2.imwrite(out_path + os.sep + filename, roi)
-        cnt = len(os.listdir(out_path))
+        cnt = len(glob.glob(out_path + os.sep + "*"))
         window.write_event_value("-PRINT-", f"　→ {cnt}個に拡張した\n")
 
 
